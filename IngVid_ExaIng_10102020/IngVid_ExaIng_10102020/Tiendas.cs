@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace IngVid_ExaIng_10102020 {
     public class Tiendas {
-        
+
+        Prendas Prenda;
+
         public Tiendas() {
             Nombre = "Prendas Moda";
             Direccion = "Payró 1941, Godoy Cruz";
             
-            Prendas Prenda = new Prendas();
+            Prenda = new Prendas("cargar");
         }
 
         public string Nombre;
@@ -22,6 +24,10 @@ namespace IngVid_ExaIng_10102020 {
             Console.WriteLine("Nombre: {0}", Nombre);
             Console.WriteLine("Dirección: {0}", Direccion);
             Console.WriteLine("");
+        }
+
+        public void MostrarListadoPrendas() {
+            Prenda.MostrarPrendas();
         }
     }
 }

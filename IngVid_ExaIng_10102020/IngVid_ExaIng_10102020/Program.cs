@@ -36,7 +36,7 @@ namespace IngVid_ExaIng_10102020 {
                         Tienda.MostrarTienda();
                         break;
                     case "c":
-
+                        Tienda.MostrarListadoPrendas();
                         break;
                     case "d":
 
