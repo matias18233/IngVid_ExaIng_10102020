@@ -1,0 +1,7 @@
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\bin\Debug\IngVid_ExaIng_10102020.exe.config
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\bin\Debug\IngVid_ExaIng_10102020.exe
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\bin\Debug\IngVid_ExaIng_10102020.pdb
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\obj\Debug\IngVid_ExaIng_10102020.csprojAssemblyReference.cache
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\obj\Debug\IngVid_ExaIng_10102020.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\obj\Debug\IngVid_ExaIng_10102020.exe
+C:\xampp\htdocs\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\IngVid_ExaIng_10102020\obj\Debug\IngVid_ExaIng_10102020.pdb
