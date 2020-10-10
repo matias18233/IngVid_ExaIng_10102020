@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace IngVid_ExaIng_10102020 {
-    interface Impresiones {
-
+    public interface Impresiones {
+        void ImprimirCotizacion();
+        void ImprimirHistorial();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace IngVid_ExaIng_10102020 {
-    class Vendedores {
+    public class Vendedores {
 
     }
 }
