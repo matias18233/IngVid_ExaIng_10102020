@@ -15,7 +15,7 @@ namespace IngVid_ExaIng_10102020 {
         
         public Prendas(string cadena) {
             CargarPrendas(0, "Camisas Cool Night", 100, 200, "Manga corta con cuello mao");
-            CargarPrendas(2, "Camisas Verano 98", 100, 300, "Manga corta con cuello normal");
+            CargarPrendas(1, "Camisas Verano 98", 100, 300, "Manga corta con cuello normal");
             CargarPrendas(2, "Camisas rojas a cuadros", 100, 150, "Manga larga con cuello mao");
             CargarPrendas(3, "Camisas formal", 100, 350, "Manga larga con cuello normal");
             CargarPrendas(4, "Pantalón estilo moderno", 200, 1500, "chupines");
@@ -45,6 +45,16 @@ namespace IngVid_ExaIng_10102020 {
                 Console.WriteLine("ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda);
             }
             Console.WriteLine("");
+        }
+
+        public string ObtenerElemento(int elemento) {
+            string cadena = "";
+            foreach (Prendas item in ListaPrendas) {
+                if (item.Id == elemento) {
+                    cadena = "ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda;
+                }
+            }
+            return cadena;
         }
     }
 }

@@ -29,5 +29,11 @@ namespace IngVid_ExaIng_10102020 {
         public void MostrarListadoPrendas() {
             Prenda.MostrarPrendas();
         }
+
+        public string MostrarPrenda(int posicion) {
+            string cadena;
+            cadena = Prenda.ObtenerElemento(posicion);
+            return cadena;
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace IngVid_ExaIng_10102020 {
             Vendedores Vendedor = new Vendedores();
 
             Tiendas Tienda = new Tiendas();
+
+            Historiales Historial = new Historiales("cargar");
             
             Console.WriteLine("Bienvenido al sistema de cotizaciones.");
             Console.WriteLine("--------------------------------------");
@@ -39,7 +41,7 @@ namespace IngVid_ExaIng_10102020 {
                         Tienda.MostrarListadoPrendas();
                         break;
                     case "d":
-
+                        Historial.Cotizar(Vendedor, Tienda);
                         break;
                     case "e":
 
