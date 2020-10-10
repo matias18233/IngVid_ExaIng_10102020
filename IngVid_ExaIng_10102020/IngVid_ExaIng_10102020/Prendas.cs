@@ -1,25 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace IngVid_ExaIng_10102020 {
-    public class Prendas {
+namespace IngVid_ExaIng_10102020
+{
+    public class Prendas
+    {
 
         List<Prendas> ListaPrendas = new List<Prendas>();
 
-        public Prendas() {
+        public Prendas()
+        {
 
         }
-        
-        public Prendas(string cadena) {
-            CargarPrendas(0, "Camisas Cool Night", 100, 200, "Manga corta con cuello mao");
-            CargarPrendas(1, "Camisas Verano 98", 100, 300, "Manga corta con cuello normal");
-            CargarPrendas(2, "Camisas rojas a cuadros", 100, 150, "Manga larga con cuello mao");
-            CargarPrendas(3, "Camisas formal", 100, 350, "Manga larga con cuello normal");
-            CargarPrendas(4, "Pantalón estilo moderno", 200, 1500, "chupines");
-            CargarPrendas(5, "Pantalón trabajador", 200, 500, "normales");
+
+        public Prendas(string cadena)
+        {
+            CargarPrendas(0, "Camisas Cool Night", 100, 200, "Manga corta", "cuello mao");
+            CargarPrendas(1, "Camisas Verano 98", 100, 300, "Manga corta", "cuello normal");
+            CargarPrendas(2, "Camisas rojas a cuadros", 100, 150, "Manga larga", "cuello mao");
+            CargarPrendas(3, "Camisas formal", 100, 350, "Manga larga", "cuello normal");
+            CargarPrendas(4, "Pantalón estilo moderno", 200, 1500, "pantalon", "chupines");
+            CargarPrendas(5, "Pantalón trabajador", 200, 500, "pantalon", "normales");
         }
 
         public int Id;
@@ -27,31 +28,62 @@ namespace IngVid_ExaIng_10102020 {
         public double Precio; // = 0.0d;
         public int Stock;
         public string TipoPrenda;
+        public string TipoPrenda2;
 
-        public void CargarPrendas(int pId, string pNombre, double pPrecio, int pStock, string pTipoPrenda) {
+        public void CargarPrendas(int pId, string pNombre, double pPrecio, int pStock, string pTipoPrenda, string pTipoPrenda2)
+        {
             Prendas prenda = new Prendas();
             prenda.Id = pId;
             prenda.Nombre = pNombre;
             prenda.Precio = pPrecio;
             prenda.Stock = pStock;
             prenda.TipoPrenda = pTipoPrenda;
-            
+            prenda.TipoPrenda2 = pTipoPrenda2;
+
             ListaPrendas.Add(prenda);
         }
 
-        public void MostrarPrendas() {
+        public void MostrarPrendas()
+        {
             Console.WriteLine("Listado de prendas:");
-            foreach (Prendas item in ListaPrendas) {
-                Console.WriteLine("ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda);
+            foreach (Prendas item in ListaPrendas)
+            {
+                Console.WriteLine("ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda + " TipoPrenda2: " + item.TipoPrenda2);
             }
             Console.WriteLine("");
         }
 
-        public string ObtenerElemento(int elemento) {
+        public string ObtenerElemento(int elemento)
+        {
             string cadena = "";
-            foreach (Prendas item in ListaPrendas) {
+            foreach (Prendas item in ListaPrendas)
+            {
+                if (item.Id == elemento)
+                {
+                    cadena = "ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda + " TipoPrenda2: " + item.TipoPrenda2;
+                }
+            }
+            return cadena;
+        }
+
+        public string ObtenerTipoPrendas(int elemento) {
+            string cadena = "";
+            foreach (Prendas item in ListaPrendas)
+            {
                 if (item.Id == elemento) {
-                    cadena = "ID: " + item.Id + " Nombre: " + item.Nombre + " Precio: " + item.Precio + " Stock: " + item.Stock + " TipoPrenda: " + item.TipoPrenda;
+                    cadena = item.TipoPrenda;
+                }
+            }
+            return cadena;
+        }
+        public string ObtenerTipoPrendas2(int elemento)
+        {
+            string cadena = "";
+            foreach (Prendas item in ListaPrendas)
+            {
+                if (item.Id == elemento)
+                {
+                    cadena = item.TipoPrenda2;
                 }
             }
             return cadena;
